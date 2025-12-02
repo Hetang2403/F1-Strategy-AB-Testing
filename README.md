@@ -13,14 +13,23 @@ Answers the question: "Which pit strategy is actually better?"
 
 ## Example
 
-**Question**: At Monaco, is a 1-stop or 2-stop strategy faster?
+**Question**: At Silverstone, should we pit on lap 20 or lap 25 for a 1-stop strategy?
 
 **Answer**: 
-- Simulated 1000 races with each strategy
-- 1-stop wins 67% of the time
-- Average advantage: 11.3 seconds
-- Statistical significance: p < 0.001
-- **Conclusion**: Use 1-stop strategy
+- Simulated 1000 races with each pit window
+- Lap 25 pit wins 58% of the time
+- Average advantage: 2.8 seconds
+- Statistical significance: p < 0.01
+- **Conclusion**: Pit on lap 25 for optimal tire life vs pace tradeoff
+
+**Another Example**: At Monza, Soft→Medium→Hard vs Medium→Hard→Soft for 2-stop?
+
+**Answer**:
+- Soft→Medium→Hard wins 72% of simulations
+- Better qualifying tire gives track position advantage
+- 4.2 second average gain
+- p < 0.001
+- **Conclusion**: Start on Soft tires
 
 ## Why This Exists
 
@@ -37,32 +46,3 @@ F1 teams can't A/B test strategies in real races (you only get one shot). This f
 ## Project Status
 
 🚧 In Development - Phase 1: Data Collection & Modeling
-```
-
----
-
-### GitHub Repository Settings
-
-When you create the repo on GitHub, you'd fill in:
-
-**Description field:**
-```
-F1 race strategy simulator with statistical A/B testing using real telemetry data and Monte Carlo simulation
-```
-
-**Topics/Tags:**
-```
-formula-1
-machine-learning
-ab-testing
-monte-carlo
-sports-analytics
-data-science
-python
-fastf1
-racing
-```
-
-**Website (once deployed):**
-```
-https://your-app.streamlit.app
