@@ -19,7 +19,6 @@ data/raw/*.csv
 data/raw/*.parquet
 data/processed/*.csv
 data/processed/*.parquet
-data/models/*.pkl
 data/models/*.joblib
 data/cache/fastf1/2022/*.cache
 
