@@ -2,8 +2,8 @@
 
 A machine learning-powered Formula 1 race strategy comparison tool that simulates and compares different pit stop strategies using historical race data.
 
-**Live Demo:** https://your-vercel-url.vercel.app  
-**Backend API:** https://your-railway-url.railway.app
+**Live Demo:** https://f1-strategy-ab-testing.vercel.app/  
+**Backend API:** https://f1-strategy-ab-testing.up.railway.app/
 
 ## Project Overview
 
