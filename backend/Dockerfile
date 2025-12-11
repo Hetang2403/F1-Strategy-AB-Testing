@@ -2,22 +2,21 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Copy requirements
+# Copy requirements first (better caching)
 COPY requirements.txt .
-
-# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
-COPY . .
-
-# Copy model files and src directory from parent
-COPY ../data/models ./data/models
+# Copy the entire project structure
+COPY app.py .
 COPY ../src ./src
 COPY ../config ./config
+COPY ../data/models ./data/models
 
-# Expose port
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/app
+
 EXPOSE 5000
 
-# Run app
-CMD ["python", "app.py"]
+# Start command
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--timeout", "120", "--workers", "2", "app:app"]
