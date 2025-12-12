@@ -19,7 +19,7 @@ from src.testing.race_state import RaceState, Competitor
 app = Flask(__name__)
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["http://localhost:5173", "http://127.0.0.1:5173", "https://f1-strategy-ab-testing.vercel.app/", "https://f1-strategy-ab-testing-hetangs-projects.vercel.app/"],
+        "origins": "*",  # Allow all origins
         "methods": ["GET", "POST", "OPTIONS"],
         "allow_headers": ["Content-Type"]
     }
