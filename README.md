@@ -368,6 +368,7 @@ GET /api/stint-plans
 - Weather probability integration
 - Native mobile applications (iOS/Android)
 - Multi-user collaboration features
+- Visualization of the strategies (currently working on)
 
 ## Data Sources
 
@@ -413,7 +414,6 @@ This project is licensed under the MIT License. See LICENSE file for details.
 - FastF1 project for comprehensive F1 data API
 - Open source community for excellent tools and libraries
 - F1 community for domain knowledge and strategy insights
-- Anthropic Claude for development assistance
 
 ## Contact
 
