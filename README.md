@@ -423,6 +423,6 @@ This project is licensed under the MIT License. See LICENSE file for details.
 
 ---
 
-**Student Project - 2024**
+**Student Project - 2025**
 
 Built as a comprehensive demonstration of machine learning, software engineering, and full-stack development capabilities.
